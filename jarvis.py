@@ -55,7 +55,7 @@ def sendEmail(to, content):
     server.ehlo()
     server.starttls()
     server.login('coc.full.rusher@gmail.com', 'password')
-    server.sendmail('yashcharizard@gmail.com', to, content)
+    server.sendmail('priansh.madan@gmail.com', to, content)
     server.close()
 
 def jokes():
@@ -138,7 +138,7 @@ class mainT(QThread):
             elif 'music' in query or "play song" in query:
                 speak("Here you go with music")
                 # music_dir = "G:\\Song"
-                music_dir = r"C:\Users\HP\Desktop\Yash_folder\SONGS"
+                music_dir = r"C:\Users\HP\Desktop\SONGS"
                 songs = os.listdir(music_dir)
                 print(songs)   
                 random = os.startfile(os.path.join(music_dir, songs[1]))
@@ -185,7 +185,7 @@ class mainT(QThread):
 
             elif 'word' in query:
                 speak("opening MS Word")
-                word = r'C:\Users\HP\Desktop\YASH THE GREAT\OLD projects\New Microsoft Word Document.docx'
+                word = r'C:\Users\HP\Desktop\OLD projects\New Microsoft Word Document.docx'
                 os.startfile(word)
 
             elif "write a note" in query:
@@ -246,7 +246,7 @@ class mainT(QThread):
 
             elif 'ppt' in query:
                 speak("opening Power Point presentation")
-                power = r"C:\Users\HP\Desktop\YASH THE GREAT\OLD projects\New Microsoft Office PowerPoint Presentation.pptx"
+                power = r"C:\Users\HP\Desktop\\OLD projects\New Microsoft Office PowerPoint Presentation.pptx"
                 os.startfile(power)
  
             elif 'is love' in query:
